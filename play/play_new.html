@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/play_new.css">
+
+</head>
+
+<body>
+    <div class="w_div">
+        <h2>发现酷玩</h2>
+        <ul>
+            <li>最新</li>
+            <li>最热</li>
+            <li>分类</li>
+        </ul>
+    </div>
+    <ul id="lis">
+    </ul>
+    <script type="html/text" id="htm">
+        {{each value}}
+        {{each $value}}
+        <li class="w_li">
+            <img src={{$value.img}} alt="">
+            <div class="w_div1">{{$value.text}}</div>
+            <p>{{$value.description}}</p>
+           <div>
+               <span class="w_span_color">{{$value.price}}</span>
+               <div>
+                   <span></span>
+                   <span>{{$value.like}}</span>
+                   <span></span>
+                   <span>{{$value.words}}</span>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+        {{/each}}
+    </script>
+    <script src="../js/template-web.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script>
+        ajax.get('/play/new', 'htm', lis);
+    </script>
+</body>
+
+</html>
