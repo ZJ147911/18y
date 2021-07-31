@@ -55,6 +55,7 @@
   width: 70%;
   float: right;
   background-color: #F3F3F3;
+  padding-bottom: 20px;
 }
 
 .box .main section div:nth-child(1) {
@@ -83,4 +84,8 @@
 .box .main section div:nth-child(1) ul {
   margin-left: 1em;
   color: #666;
+}
+
+iframe {
+  margin-top: 50px;
 }
