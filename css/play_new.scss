@@ -3,13 +3,39 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+ul{
+  list-style: none;
+}
   span {
     display: inline-block;
   }
   @mixin width($width, $height) {
     width: $width;
     height: $height;
+  }
+  .w_head {
+    @include width(100%, 171px);
+    text-align: center;
+    h1{
+      font-size: 35px;
+      margin: 50px 0px;
+    }
+    ul{
+      overflow: hidden;
+      margin: auto;
+      width: 125px*3;
+      .w_play_nev{
+         border-bottom: 4px solid #fd5238;
+      }
+      li{
+        float: left;
+        @include width(125px, 35px);
+        a{
+          color: #9b9794;
+          text-decoration: none;
+        }
+      }
+    }
   }
   #lis {
     list-style: none;
