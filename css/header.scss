@@ -1,0 +1,66 @@
+header {
+  height: 75px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8cddd;
+
+  .center {
+    width: 1000px;
+    margin: 0 auto;
+
+    .z_logo {
+      margin-top: 11px;
+
+      img {
+        height: 52px;
+      }
+    }
+
+    ul {
+      margin-left: 60px;
+
+      li {
+        float: left;
+        width: 90px;
+        height: 32px;
+
+        font-size: 20px;
+        margin-top: 33px;
+
+        &:hover {
+          color: #fb4541;
+        }
+      }
+    }
+
+    .z_sz {
+      margin-top: 33px;
+
+      .z_search {
+        display: inline-block;
+        width: 24px;
+        height: 26px;
+        margin: 3px 33px;
+        background: url(./img/search.png) no-repeat;
+
+      }
+
+      .z_zhu {
+        display: inline-block;
+        width: 52px;
+        height: 32px;
+        box-sizing: border-box;
+        border: 1px solid #fa553f;
+        border-radius: 2px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 32px;
+
+        a {
+          color: #fa553f;
+        }
+
+      }
+    }
+  }
+}
+

@@ -27,7 +27,6 @@ address, caption, cite, code, dfn, em, strong, th, var {
 ol, ul { list-style:none; }
 caption, th { text-align:left; }
 h1, h2, h3, h4, h5, h6 {
-    font-size:200%;
     font-weight:normal;
 }
 :focus { outline: 0;}
